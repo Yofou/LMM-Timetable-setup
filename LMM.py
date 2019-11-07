@@ -10,7 +10,7 @@ client = gspread.authorize(creds)
 
 # Find a workbook by name and open the first sheet
 # Make sure you use the right name here.
-sheet = client.open_by_url('https://docs.google.com/spreadsheets/d/1N3CIscG1Q89HQzCC3ihKXz2DhEapOgLJ8P7NYFnDWYw/edit#gid=0').worksheet("Timetable")
+sheet = client.open_by_url('timetable url').worksheet("Timetable")
 
 # Extract and print all of the values
 list_of_hashes = sheet.get_all_values()
